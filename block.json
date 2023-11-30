@@ -7,6 +7,9 @@
 	"icon": "admin-customizer",
 	"textdomain": "webblock",
 	"editorScript": "file:./build/index.js",
-	"style":"file:./build/style-index.css",
-	"editorStyle": "file:./build/index.css"
+	"style": "file:./build/style-index.css",
+	"editorStyle": "file:./build/index.css",
+	"attributes": {
+		"text": "string"
+	}
 }

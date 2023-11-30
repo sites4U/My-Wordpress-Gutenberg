@@ -1,1 +1,1 @@
-{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://webblock/./src/editor.scss"],"sourcesContent":[".wp-block-webart-webblock {\r\n\tbackground: #f00;\r\n}\r\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://webblock/./src/editor.scss"],"sourcesContent":[".wp-block-webart-webblock {\r\n\tbackground: #f5f5ff;\r\n}\r\n"],"names":[],"sourceRoot":""}

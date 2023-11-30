@@ -20,11 +20,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Edit() {
-  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    ...blockProps
-  }, "Edit 3");
+function Edit({
+  attributes,
+  setAttributes
+}) {
+  const {
+    text
+  } = attributes;
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
+    tagName: "h1",
+    value: text,
+    onChange: value => setAttributes({
+      text: value
+    }),
+    placeholder: "Enter title"
+  });
 }
 
 /***/ }),
