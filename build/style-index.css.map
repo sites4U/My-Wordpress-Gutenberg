@@ -1,0 +1,1 @@
+{"version":3,"file":"./style-index.css","mappings":";;;AAGA;EACC;EACA,gBALO;EAMP,WALY;AAGb,C","sources":["webpack://webblock/./src/style.scss"],"sourcesContent":["$color: #00f;\r\n$text-color: #fff;\r\n\r\n.wp-block-webart-webblock {\r\n\tfont-size: 100px;\r\n\tbackground: $color;\r\n\tcolor: $text-color;\r\n}\r\n"],"names":[],"sourceRoot":""}
