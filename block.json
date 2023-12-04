@@ -10,6 +10,10 @@
 	"style": "file:./build/style-index.css",
 	"editorStyle": "file:./build/index.css",
 	"attributes": {
-		"text": "string"
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1"
+		}
 	}
 }
