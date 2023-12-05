@@ -26,6 +26,7 @@
 	"dependencies": {
 		"@wordpress/block-editor": "^12.15.0",
 		"@wordpress/blocks": "^12.24.0",
-		"@wordpress/components": "^25.13.0"
+		"@wordpress/components": "^25.13.0",
+		"@wordpress/i18n": "^4.47.0"
 	}
 }
