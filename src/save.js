@@ -1,9 +1,11 @@
-import { useBlockProps, RichText, InnerBlocks } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 export default function Save( { attributes } ) {
-	const { text, align } = attributes;
+	const { columns } = attributes;
 	return (
-		<div { ...useBlockProps.save()}>
+		<div { ...useBlockProps.save({
+			className: `the-${ columns }-columns`,
+		}) }>
 			<InnerBlocks.Content />
 		</div>
 	);
