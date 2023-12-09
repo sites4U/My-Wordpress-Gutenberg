@@ -1,4 +1,44 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-webart-cdxblocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wp-block-webart-cdxblocks.the-1-columns {
+  /* stylelint-disable-next-line rule-empty-line-before */
+}
+.wp-block-webart-cdxblocks.the-1-columns .wp-block-webart-cdxblock {
+  width: calc(100% / 1 - 10px);
+}
+.wp-block-webart-cdxblocks.the-2-columns {
+  /* stylelint-disable-next-line rule-empty-line-before */
+}
+.wp-block-webart-cdxblocks.the-2-columns .wp-block-webart-cdxblock {
+  width: calc(100% / 2 - 10px);
+}
+.wp-block-webart-cdxblocks.the-3-columns {
+  /* stylelint-disable-next-line rule-empty-line-before */
+}
+.wp-block-webart-cdxblocks.the-3-columns .wp-block-webart-cdxblock {
+  width: calc(100% / 3 - 10px);
+}
+.wp-block-webart-cdxblocks.the-4-columns {
+  /* stylelint-disable-next-line rule-empty-line-before */
+}
+.wp-block-webart-cdxblocks.the-4-columns .wp-block-webart-cdxblock {
+  width: calc(100% / 4 - 10px);
+}
+.wp-block-webart-cdxblocks .wp-block-webart-cdxblock {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.wp-block-webart-cdxblocks .wp-block-webart-cdxblock h2 {
+  margin-top: 0;
+}
 
+/*# sourceMappingURL=style-index.css.map*/
