@@ -30,6 +30,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			</InspectorControls>
 			<InnerBlocks
 				allowedBlocks={ [ 'webart/cdxblock' ] }
+				orientation="horizontal"
 				template={ [ [ 'webart/cdxblock' ], [ 'webart/cdxblock' ] ] }
 			/>
 		</div>

@@ -1,0 +1,53 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable rule-empty-line-before */
+/* stylelint-disable indentation */
+.wp-block-webart-cdxblocks {
+		display: block;
+
+		> div.block-editor-inner-blocks > .block-editor-block-list__layout {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		@for $i from 1 through 4 {
+			&.the-#{$i}-columns {
+				> .block-editor-inner-blocks > .block-editor-block-list__layout {
+					> [data-type="webart/cdxblock"] {
+						width: calc(100% / #{$i} - 10px);
+					}
+				}
+			}
+
+			> .block-editor-inner-blocks > .block-editor-block-list__layout 
+			> [data-type="webart/cdxblock"] {
+				background: #f2f2f2;
+				padding: 20px;
+				border-radius: 30px;
+				box-sizing: border-box;
+				margin-bottom: 20px;
+
+				.image {
+					position: relative;
+
+					&.is-loading img{
+						opacity: 0.2;
+					}
+
+					.components-spinner {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+
+				h2 {
+					margin-top: 0;
+				}
+			}
+
+		}
+}

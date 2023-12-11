@@ -37,6 +37,10 @@
   box-sizing: border-box;
   margin-bottom: 20px;
 }
+.wp-block-webart-cdxblocks .wp-block-webart-cdxblock img {
+  max-width: 100%;
+  height: auto;
+}
 .wp-block-webart-cdxblocks .wp-block-webart-cdxblock h2 {
   margin-top: 0;
 }
