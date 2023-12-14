@@ -1,5 +1,6 @@
 import { useBlockProps } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
+import { format, dateI18n, getSettings } from '@wordpress/date';
 import './editor.scss';
 
 export default function Edit( { attributes } ) {
@@ -15,7 +16,6 @@ export default function Edit( { attributes } ) {
 			{ postsPerPage }
 		);
 	} );
-	//console.log( posts );
 	const blockProps = useBlockProps();
 	return (
 		<div { ...blockProps }>
@@ -30,9 +30,17 @@ export default function Edit( { attributes } ) {
 						<div key={ post.id }>
 							{ showImage && featuredImage && (
 								<img
-									src={ featuredImage.sizes.large.source_url }
+									src={ featuredImage.source_url }
 									alt={ featuredImage.alt_text }
 								/>
+							) }
+							{ post.date_gmt && (
+								<time dateTime={ format( 'c', post.date_gmt ) }>
+									{ dateI18n(
+										getSettings().formats.date,
+										post.date_gmt
+									) }
+								</time>
 							) }
 							<h2>
 								<a href={ post.link }>
